@@ -1,0 +1,902 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <title>Planetarium Quiz</title>
+</head>
+<body>
+
+  <!-- top section -->
+  <div class="intro py-3 bg-white text-center">
+    <div class="container">
+        <h2 class="text-primery display-3 my-4">The Planetarium Quiz</h2>
+    </div>
+  </div>
+
+  <!--result-->
+  <div class="result py-4 d-none bg-light text-center" >
+    <div class="conatiner lead">
+        <p><span class="text-primary display-4 p-3">0%</span></p>
+    </div>
+  </div>
+
+  <!-- quiz section -->
+  <div class="py-4 bg-primary">
+    <div class="container">
+        <h2 class="my-5 text-white">Per aspera ad astra!</h2>
+
+        <!--Q1-->
+        <form class="quiz-form text-light">
+            <div class="my-5">
+                <p class="lead font-weight-normal">1. The dark areas along the lunar surface are referred to as?</p>
+                <div class="form-check my-2 text-white-50">
+                    <input type="radio" name="q1" value="A" checked>
+                    <label for="" class="form-check-label">The Maria or mare.</label>
+                </div>
+                <div class="form-check my-2 text-white-50">
+                    <input type="radio" name="q1" value="B">
+                    <label for="" class="form-check-label">The dark side of the moon.</label>
+                </div>
+                <div class="form-check my-2 text-white-50">
+                    <input type="radio" name="q1" value="C">
+                    <label for="" class="form-check-label">The Moon`s bolders.</label>
+                </div>
+            </div>
+
+           <!--Q2--> 
+            <div class="my-5">
+                <p class="lead font-weight-normal">2. Which planet in our solar system is the fifth largest?</p>
+                <div class="form-check my-2 text-white-50">
+                    <input type="radio" name="q2" value="A" checked>
+                    <label for="" class="form-check-label">Jupiter</label>
+                </div>
+                <div class="form-check my-2 text-white-50">
+                    <input type="radio" name="q2" value="B">
+                    <label for="" class="form-check-label">Earth</label>
+                </div>
+                <div class="form-check my-2 text-white-50">
+                    <input type="radio" name="q2" value="C">
+                    <label for="" class="form-check-label">Mars</label>
+                </div>
+            </div>
+    
+
+            <!--Q3--> 
+            <div class="my-5">
+                <p class="lead font-weight-normal">3. If the Moon is rising at midnight, it is likely to be in what phase?</p>
+                <div class="form-check my-2 text-white-50">
+                    <input type="radio" name="q3" value="A" checked>
+                    <label for="" class="form-check-label">First Quarter.</label>
+                </div>
+                <div class="form-check my-2 text-white-50">
+                    <input type="radio" name="q3" value="B">
+                    <label for="" class="form-check-label">Second Quarter.</label>
+                </div>
+                <div class="form-check my-2 text-white-50">
+                    <input type="radio" name="q3" value="C">
+                    <label for="" class="form-check-label">Last Quarter.</label>
+                </div>
+            </div>
+
+            <!--Q4--> 
+            <div class="my-5">
+                <p class="lead font-weight-normal">4. The Milky Way is an example of what type of galaxy?</p>
+                <div class="form-check my-2 text-white-50">
+                    <input type="radio" name="q4" value="A" checked>
+                    <label for="" class="form-check-label">barred spiral galaxy.</label>
+                </div>
+                <div class="form-check my-2 text-white-50">
+                    <input type="radio" name="q4" value="B">
+                    <label for="" class="form-check-label">a rotating galaxy.</label>
+                </div>
+                <div class="form-check my-2 text-white-50">
+                    <input type="radio" name="q4" value="C">
+                    <label for="" class="form-check-label">Elliptical galaxy.</label>
+                </div>
+            </div>
+
+            <!--Q5-->
+            <div class="my-5">
+                <p class="lead font-weight-normal">5. Which golden-nosed Dutch astronomer is considered the grand patriarch of observational astronomy?</p>
+                <div class="form-check my-2 text-white-50">
+                    <input type="radio" name="q5" value="A" checked>
+                    <label for="" class="form-check-label">Tycho Brahe</label>
+                </div>
+                <div class="form-check my-2 text-white-50">
+                    <input type="radio" name="q5" value="B">
+                    <label for="" class="form-check-label">Ole Rømer</label>
+                </div>
+                <div class="form-check my-2 text-white-50">
+                    <input type="radio" name="q5" value="C">
+                    <label for="" class="form-check-label">John Louis Emil Dreyer</label>
+                </div>
+            </div>
+
+            <!--Q6-->
+            <div class="my-5">
+                <p class="lead font-weight-normal">6.What a reflecting telescopes use instead of lens to focus and collect light?</p>
+                <div class="form-check my-2 text-white-50">
+                    <input type="radio" name="q6" value="A" checked>
+                    <label for="" class="form-check-label">Crytals.</label>
+                </div>
+                <div class="form-check my-2 text-white-50">
+                    <input type="radio" name="q6" value="B">
+                    <label for="" class="form-check-label">Dimonds.</label>
+                </div>
+                <div class="form-check my-2 text-white-50">
+                    <input type="radio" name="q6" value="C">
+                    <label for="" class="form-check-label">Mirrors.</label>
+                </div>
+            </div>
+
+            <!--Q7-->
+            <div class="my-5">
+                <p class="lead font-weight-normal">7. The Big Dipper is not a constellation, but is instead known as a?</p>
+                <div class="form-check my-2 text-white-50">
+                    <input type="radio" name="q7" value="A" checked>
+                    <label for="" class="form-check-label">Galaxy.</label>
+                </div>
+                <div class="form-check my-2 text-white-50">
+                    <input type="radio" name="q7" value="B">
+                    <label for="" class="form-check-label">Asterism.</label>
+                </div>
+                <div class="form-check my-2 text-white-50">
+                    <input type="radio" name="q7" value="C">
+                    <label for="" class="form-check-label">Solar system.</label>
+                </div>
+            </div>
+
+            <!--Q8-->
+            <div class="my-5">
+                <p class="lead font-weight-normal">8. Who was the first person to reach space?</p>
+                <div class="form-check my-2 text-white-50">
+                    <input type="radio" name="q8" value="A" checked>
+                    <label for="" class="form-check-label">Neil Armstrong</label>
+                </div>
+                <div class="form-check my-2 text-white-50">
+                    <input type="radio" name="q8" value="B">
+                    <label for="" class="form-check-label">Yuri Gagarin</label>
+                </div>
+                <div class="form-check my-2 text-white-50">
+                    <input type="radio" name="q8" value="C">
+                    <label for="" class="form-check-label">Devid Hudson</label>
+                </div>
+            </div>
+
+            <!--Q9-->
+            <div class="my-5">
+                <p class="lead font-weight-normal">9. The Universe, some think, consists of four dimensions. Three of these dimensions are spatial. The other dimension is?</p>
+                <div class="form-check my-2 text-white-50">
+                    <input type="radio" name="q9" value="A" checked>
+                    <label for="" class="form-check-label">Antimatter</label>
+                </div>
+                <div class="form-check my-2 text-white-50">
+                    <input type="radio" name="q9" value="B">
+                    <label for="" class="form-check-label">Time</label>
+                </div>
+                <div class="form-check my-2 text-white-50">
+                    <input type="radio" name="q9" value="C">
+                    <label for="" class="form-check-label">Dark matter</label>
+                </div>
+            </div>
+
+            <!--Q10-->
+            <div class="my-5">
+                <p class="lead font-weight-normal">10. Which two planets in our solar system have no known moons?</p>
+                <div class="form-check my-2 text-white-50">
+                    <input type="radio" name="q10" value="A" checked>
+                    <label for="" class="form-check-label">Mercury and Venus.</label>
+                </div>
+                <div class="form-check my-2 text-white-50">
+                    <input type="radio" name="q10" value="B">
+                    <label for="" class="form-check-label">Earth and Saturn.</label>
+                </div>
+                <div class="form-check my-2 text-white-50">
+                    <input type="radio" name="q10" value="C">
+                    <label for="" class="form-check-label">Neptune and Venus.</label>
+                </div>
+            </div>
+
+            <!--Q11-->
+            <div class="my-5">
+                <p class="lead font-weight-normal">11. Which 17th century German mathematician formulated the three laws of planetary motion?</p>
+                <div class="form-check my-2 text-white-50">
+                    <input type="radio" name="q11" value="A" checked>
+                    <label for="" class="form-check-label">Arnold Möller</label>
+                </div>
+                <div class="form-check my-2 text-white-50">
+                    <input type="radio" name="q11" value="B">
+                    <label for="" class="form-check-label">Conrad Henfling</label>
+                </div>
+                <div class="form-check my-2 text-white-50">
+                    <input type="radio" name="q11" value="C">
+                    <label for="" class="form-check-label">Johannes Kepler</label>
+                </div>
+            </div>
+
+            <!--Q12-->
+            <div class="my-5">
+                <p class="lead font-weight-normal">12. Which type of electromagnetic radiation is the most energetic?</p>
+                <div class="form-check my-2 text-white-50">
+                    <input type="radio" name="q12" value="A" checked>
+                    <label for="" class="form-check-label">Gamma radiation</label>
+                </div>
+                <div class="form-check my-2 text-white-50">
+                    <input type="radio" name="q12" value="B">
+                    <label for="" class="form-check-label">X-rays</label>
+                </div>
+                <div class="form-check my-2 text-white-50">
+                    <input type="radio" name="q12" value="C">
+                    <label for="" class="form-check-label">Ultraviolet radiation</label>
+                </div>
+            </div>
+
+            <!--Q13-->
+            <div class="my-5">
+                <p class="lead font-weight-normal">13. Orion's belt consists of how many stars?</p>
+                <div class="form-check my-2 text-white-50">
+                    <input type="radio" name="q13" value="A" checked>
+                    <label for="" class="form-check-label">22</label>
+                </div>
+                <div class="form-check my-2 text-white-50">
+                    <input type="radio" name="q13" value="B">
+                    <label for="" class="form-check-label">7</label>
+                </div>
+                <div class="form-check my-2 text-white-50">
+                    <input type="radio" name="q13" value="C">
+                    <label for="" class="form-check-label">3</label>
+                </div>
+            </div>
+
+            <!--Q14-->
+            <div class="my-5">
+                <p class="lead font-weight-normal">14. What is the diameter of Sun?</p>
+                <div class="form-check my-2 text-white-50">
+                    <input type="radio" name="q14" value="A" checked>
+                    <label for="" class="form-check-label"> 15,263,987 km</label>
+                </div>
+                <div class="form-check my-2 text-white-50">
+                    <input type="radio" name="q14" value="B">
+                    <label for="" class="form-check-label"> 1,392,684 km</label>
+                </div>
+                <div class="form-check my-2 text-white-50">
+                    <input type="radio" name="q14" value="C">
+                    <label for="" class="form-check-label"> 253,698,745 Km</label>
+                </div>
+            </div>
+            
+            <!--Q15-->
+            <div class="my-5">
+                <p class="lead font-weight-normal">15.What percent of the solar system`s mass does Sun holds?</p>
+                <div class="form-check my-2 text-white-50">
+                    <input type="radio" name="q15" value="A" checked>
+                    <label for="" class="form-check-label">98.5 percent.</label>
+                </div>
+                <div class="form-check my-2 text-white-50">
+                    <input type="radio" name="q15" value="B">
+                    <label for="" class="form-check-label">95.5 percent.</label>
+                </div>
+                <div class="form-check my-2 text-white-50">
+                    <input type="radio" name="q15" value="C">
+                    <label for="" class="form-check-label">99.8 percent.</label>
+                </div>
+            </div>
+
+            <!--Q16-->
+            <div class="my-5">
+                <p class="lead font-weight-normal">16. When was Sun born?</p>
+                <div class="form-check my-2 text-white-50">
+                    <input type="radio" name="q16" value="A" checked>
+                    <label for="" class="form-check-label">roughly 7.6 billion years ago</label>
+                </div>
+                <div class="form-check my-2 text-white-50">
+                    <input type="radio" name="q16" value="B">
+                    <label for="" class="form-check-label">roughly 4.6 billion years ago</label>
+                </div>
+                <div class="form-check my-2 text-white-50">
+                    <input type="radio" name="q16" value="C">
+                    <label for="" class="form-check-label">roughly 11.6 billion years ago</label>
+                </div>
+            </div>
+
+            <!--Q17-->
+            <div class="my-5">
+                <p class="lead font-weight-normal">17.  What is the distance between sun and earth?</p>
+                <div class="form-check my-2 text-white-50">
+                    <input type="radio" name="q17" value="A" checked>
+                    <label for="" class="form-check-label">258,963,147 miles</label>
+                </div>
+                <div class="form-check my-2 text-white-50">
+                    <input type="radio" name="q17" value="B">
+                    <label for="" class="form-check-label">123,654,789 miles</label>
+                </div>
+                <div class="form-check my-2 text-white-50">
+                    <input type="radio" name="q17" value="C">
+                    <label for="" class="form-check-label">92,960,000 miles</label>
+                </div>
+            </div>
+
+            <!--Q18-->
+            <div class="my-5">
+                <p class="lead font-weight-normal">18. How much time does sun rays take to reach earth?</p>
+                <div class="form-check my-2 text-white-50">
+                    <input type="radio" name="q18" value="A" checked>
+                    <label for="" class="form-check-label">10 minutes</label>
+                </div>
+                <div class="form-check my-2 text-white-50">
+                    <input type="radio" name="q18" value="B">
+                    <label for="" class="form-check-label">8 minutes</label>
+                </div>
+                <div class="form-check my-2 text-white-50">
+                    <input type="radio" name="q18" value="C">
+                    <label for="" class="form-check-label">12 minutes and 30 seconds</label>
+                </div>
+            </div>
+
+            <!--Q19-->
+            <div class="my-5">
+                <p class="lead font-weight-normal">19.  What is the diameter of EARTH?</p>
+                <div class="form-check my-2 text-white-50">
+                    <input type="radio" name="q19" value="A" checked>
+                    <label for="" class="form-check-label"> 7,918 miles</label>
+                </div>
+                <div class="form-check my-2 text-white-50">
+                    <input type="radio" name="q19" value="B">
+                    <label for="" class="form-check-label">9,874 miles</label>
+                </div>
+                <div class="form-check my-2 text-white-50">
+                    <input type="radio" name="q19" value="C">
+                    <label for="" class="form-check-label">2,569 miles</label>
+                </div>
+            </div>
+
+            <!--Q20-->
+            <div class="my-5">
+                <p class="lead font-weight-normal">20. Which is the largest planet in our solar system?</p>
+                <div class="form-check my-2 text-white-50">
+                    <input type="radio" name="q20" value="A" checked>
+                    <label for="" class="form-check-label">Jupiter</label>
+                </div>
+                <div class="form-check my-2 text-white-50">
+                    <input type="radio" name="q20" value="B">
+                    <label for="" class="form-check-label">Saturn</label>
+                </div>
+                <div class="form-check my-2 text-white-50">
+                    <input type="radio" name="q20" value="C">
+                    <label for="" class="form-check-label">Mars</label>
+                </div>
+            </div>
+
+            <!--Q21-->
+            <div class="my-5">
+                <p class="lead font-weight-normal">21. Which Planet in are solar system Has the most Moons?</p>
+                <div class="form-check my-2 text-white-50">
+                    <input type="radio" name="q21" value="A" checked>
+                    <label for="" class="form-check-label">Uranus</label>
+                </div>
+                <div class="form-check my-2 text-white-50">
+                    <input type="radio" name="q21" value="B">
+                    <label for="" class="form-check-label">Jupiter</label>
+                </div>
+                <div class="form-check my-2 text-white-50">
+                    <input type="radio" name="q21" value="C">
+                    <label for="" class="form-check-label">Neptune</label>
+                </div>
+            </div>
+
+            <!--Q22-->
+            <div class="my-5">
+                <p class="lead font-weight-normal">22. Which planet is closest to the sun?</p>
+                <div class="form-check my-2 text-white-50">
+                    <input type="radio" name="q22" value="A" checked>
+                    <label for="" class="form-check-label">Venus</label>
+                </div>
+                <div class="form-check my-2 text-white-50">
+                    <input type="radio" name="q22" value="B">
+                    <label for="" class="form-check-label">Mars</label>
+                </div>
+                <div class="form-check my-2 text-white-50">
+                    <input type="radio" name="q22" value="C">
+                    <label for="" class="form-check-label">Mercury</label>
+                </div>
+            </div>
+
+            <!--Q23-->
+            <div class="my-5">
+                <p class="lead font-weight-normal">23. Which is the coldest and smallest of all planets?</p>
+                <div class="form-check my-2 text-white-50">
+                    <input type="radio" name="q23" value="A" checked>
+                    <label for="" class="form-check-label">Neptune</label>
+                </div>
+                <div class="form-check my-2 text-white-50">
+                    <input type="radio" name="q23" value="B">
+                    <label for="" class="form-check-label">Pluto</label>
+                </div>
+                <div class="form-check my-2 text-white-50">
+                    <input type="radio" name="q23" value="C">
+                    <label for="" class="form-check-label">Mars</label>
+                </div>
+            </div>
+
+            <!--Q24-->
+            <div class="my-5">
+                <p class="lead font-weight-normal">24. What is the Average distance of Moon from Earth?</p>
+                <div class="form-check my-2 text-white-50">
+                    <input type="radio" name="q24" value="A" checked>
+                    <label for="" class="form-check-label">238,855 miles</label>
+                </div>
+                <div class="form-check my-2 text-white-50">
+                    <input type="radio" name="q24" value="B">
+                    <label for="" class="form-check-label">2,365,478 miles</label>
+                </div>
+                <div class="form-check my-2 text-white-50">
+                    <input type="radio" name="q24" value="C">
+                    <label for="" class="form-check-label">321,456 miles</label>
+                </div>
+            </div>
+
+            <!--Q25-->
+            <div class="my-5">
+                <p class="lead font-weight-normal">25. When was the first man made object sent into space?</p>
+                <div class="form-check my-2 text-white-50">
+                    <input type="radio" name="q25" value="A" checked>
+                    <label for="" class="form-check-label">1962</label>
+                </div>
+                <div class="form-check my-2 text-white-50">
+                    <input type="radio" name="q25" value="B">
+                    <label for="" class="form-check-label">1969</label>
+                </div>
+                <div class="form-check my-2 text-white-50">
+                    <input type="radio" name="q25" value="C">
+                    <label for="" class="form-check-label">1957</label>
+                </div>
+            </div>
+
+            <!--Q26-->
+            <div class="my-5">
+                <p class="lead font-weight-normal">26. Which planet has the most volcanoes?</p>
+                <div class="form-check my-2 text-white-50">
+                    <input type="radio" name="q26" value="A" checked>
+                    <label for="" class="form-check-label">Venus</label>
+                </div>
+                <div class="form-check my-2 text-white-50">
+                    <input type="radio" name="q26" value="B">
+                    <label for="" class="form-check-label">Jupiter</label>
+                </div>
+                <div class="form-check my-2 text-white-50">
+                    <input type="radio" name="q26" value="C">
+                    <label for="" class="form-check-label">Mars</label>
+                </div>
+            </div>
+
+            <!--Q27-->
+            <div class="my-5">
+                <p class="lead font-weight-normal">27. Which planets do not have moons?</p>
+                <div class="form-check my-2 text-white-50">
+                    <input type="radio" name="q27" value="A" checked>
+                    <label for="" class="form-check-label">Mercury and Venus</label>
+                </div>
+                <div class="form-check my-2 text-white-50">
+                    <input type="radio" name="q27" value="B">
+                    <label for="" class="form-check-label">Pluto and Neptune</label>
+                </div>
+                <div class="form-check my-2 text-white-50">
+                    <input type="radio" name="q27" value="C">
+                    <label for="" class="form-check-label">Mars and Saturn</label>
+                </div>
+            </div>
+
+            <!--Q28-->
+            <div class="my-5">
+                <p class="lead font-weight-normal">28. Who was the first woman to reach space?</p>
+                <div class="form-check my-2 text-white-50">
+                    <input type="radio" name="q28" value="A" checked>
+                    <label for="" class="form-check-label">Reena Keith</label>
+                </div>
+                <div class="form-check my-2 text-white-50">
+                    <input type="radio" name="q28" value="B">
+                    <label for="" class="form-check-label">Monika Narnag</label>
+                </div>
+                <div class="form-check my-2 text-white-50">
+                    <input type="radio" name="q28" value="C">
+                    <label for="" class="form-check-label">Valentina Tereshkova</label>
+                </div>
+            </div>
+
+            <!--Q29-->
+            <div class="my-5">
+                <p class="lead font-weight-normal">29. Which Is the Hottest Planet in the solar system?</p>
+                <div class="form-check my-2 text-white-50">
+                    <input type="radio" name="q29" value="A" checked>
+                    <label for="" class="form-check-label">Saturn</label>
+                </div>
+                <div class="form-check my-2 text-white-50">
+                    <input type="radio" name="q29" value="B">
+                    <label for="" class="form-check-label">Jupiter</label>
+                </div>
+                <div class="form-check my-2 text-white-50">
+                    <input type="radio" name="q29" value="C">
+                    <label for="" class="form-check-label">Venus</label>
+                </div>
+            </div>
+
+            <!--Q30-->
+            <div class="my-5">
+                <p class="lead font-weight-normal">30. Which Planet do not have Rings around him?</p>
+                <div class="form-check my-2 text-white-50">
+                    <input type="radio" name="q30" value="A" checked>
+                    <label for="" class="form-check-label">Uranus</label>
+                </div>
+                <div class="form-check my-2 text-white-50">
+                    <input type="radio" name="q30" value="B">
+                    <label for="" class="form-check-label">Venus</label>
+                </div>
+                <div class="form-check my-2 text-white-50">
+                    <input type="radio" name="q30" value="C">
+                    <label for="" class="form-check-label">Neptune</label>
+                </div>
+            </div>
+
+            <!--Q31-->
+            <div class="my-5">
+                <p class="lead font-weight-normal">31. Uranus has only been visited by what spacecraft?</p>
+                <div class="form-check my-2 text-white-50">
+                    <input type="radio" name="q31" value="A" checked>
+                    <label for="" class="form-check-label">James Webb Space Telescope</label>
+                </div>
+                <div class="form-check my-2 text-white-50">
+                    <input type="radio" name="q31" value="B">
+                    <label for="" class="form-check-label">The Voyager 2</label>
+                </div>
+                <div class="form-check my-2 text-white-50">
+                    <input type="radio" name="q31" value="C">
+                    <label for="" class="form-check-label">The Voyager 1 </label>
+                </div>
+            </div>
+
+            <!--Q32-->
+            <div class="my-5">
+                <p class="lead font-weight-normal">32. What protects Earth from meteoroids and radiation from the sun? </p>
+                <div class="form-check my-2 text-white-50">
+                    <input type="radio" name="q32" value="A" checked>
+                    <label for="" class="form-check-label">It`s atmosphere</label>
+                </div>
+                <div class="form-check my-2 text-white-50">
+                    <input type="radio" name="q32" value="B">
+                    <label for="" class="form-check-label">Gravitational waves</label>
+                </div>
+                <div class="form-check my-2 text-white-50">
+                    <input type="radio" name="q32" value="C">
+                    <label for="" class="form-check-label">The Moon</label>
+                </div>
+            </div>
+
+            <!--Q33-->
+            <div class="my-5">
+                <p class="lead font-weight-normal">33. How many of our planets can be seen without a telescope?</p>
+                <div class="form-check my-2 text-white-50">
+                    <input type="radio" name="q33" value="A" checked>
+                    <label for="" class="form-check-label">3</label>
+                </div>
+                <div class="form-check my-2 text-white-50">
+                    <input type="radio" name="q33" value="B">
+                    <label for="" class="form-check-label">5</label>
+                </div>
+                <div class="form-check my-2 text-white-50">
+                    <input type="radio" name="q33" value="C">
+                    <label for="" class="form-check-label">1</label>
+                </div>
+            </div>
+
+            <!--Q34-->
+            <div class="my-5">
+                <p class="lead font-weight-normal">34. Which planet is closest in size to Earth? </p>
+                <div class="form-check my-2 text-white-50">
+                    <input type="radio" name="q34" value="A" checked>
+                    <label for="" class="form-check-label">Venus</label>
+                </div>
+                <div class="form-check my-2 text-white-50">
+                    <input type="radio" name="q34" value="B">
+                    <label for="" class="form-check-label">Uranus</label>
+                </div>
+                <div class="form-check my-2 text-white-50">
+                    <input type="radio" name="q34" value="C">
+                    <label for="" class="form-check-label">Neptune</label>
+                </div>
+            </div>
+
+            <!--Q35-->
+            <div class="my-5">
+                <p class="lead font-weight-normal">35. Which planet has supersonic winds?</p>
+                <div class="form-check my-2 text-white-50">
+                    <input type="radio" name="q35" value="A" checked>
+                    <label for="" class="form-check-label">Uranus</label>
+                </div>
+                <div class="form-check my-2 text-white-50">
+                    <input type="radio" name="q35" value="B">
+                    <label for="" class="form-check-label">Venus</label>
+                </div>
+                <div class="form-check my-2 text-white-50">
+                    <input type="radio" name="q35" value="C">
+                    <label for="" class="form-check-label">Neptune</label>
+                </div>
+            </div>
+
+            <!--Q36-->
+            <div class="my-5">
+                <p class="lead font-weight-normal">36. Which is the oldest planet in our solar system?</p>
+                <div class="form-check my-2 text-white-50">
+                    <input type="radio" name="q36" value="A" checked>
+                    <label for="" class="form-check-label">Mars</label>
+                </div>
+                <div class="form-check my-2 text-white-50">
+                    <input type="radio" name="q36" value="B">
+                    <label for="" class="form-check-label">Saturn</label>
+                </div>
+                <div class="form-check my-2 text-white-50">
+                    <input type="radio" name="q36" value="C">
+                    <label for="" class="form-check-label">Jupiter</label>
+                </div>
+            </div>
+
+            <!--Q37-->
+            <div class="my-5">
+                <p class="lead font-weight-normal">37. Which is the densest planet in our solar system?</p>
+                <div class="form-check my-2 text-white-50">
+                    <input type="radio" name="q37" value="A" checked>
+                    <label for="" class="form-check-label">Mercury</label>
+                </div>
+                <div class="form-check my-2 text-white-50">
+                    <input type="radio" name="q37" value="B">
+                    <label for="" class="form-check-label">Earth</label>
+                </div>
+                <div class="form-check my-2 text-white-50">
+                    <input type="radio" name="q37" value="C">
+                    <label for="" class="form-check-label">Venus</label>
+                </div>
+            </div>
+
+            <!--Q38-->
+            <div class="my-5">
+                <p class="lead font-weight-normal">38. Which planet spins backward relative to the others? </p>
+                <div class="form-check my-2 text-white-50">
+                    <input type="radio" name="q38" value="A" checked>
+                    <label for="" class="form-check-label">Venus</label>
+                </div>
+                <div class="form-check my-2 text-white-50">
+                    <input type="radio" name="q38" value="B">
+                    <label for="" class="form-check-label">Jupiter</label>
+                </div>
+                <div class="form-check my-2 text-white-50">
+                    <input type="radio" name="q38" value="C">
+                    <label for="" class="form-check-label">Saturn</label>
+                </div>
+            </div>
+
+            <!--Q39-->
+            <div class="my-5">
+                <p class="lead font-weight-normal">39. Which planet rotates on its side? </p>
+                <div class="form-check my-2 text-white-50">
+                    <input type="radio" name="q39" value="A" checked>
+                    <label for="" class="form-check-label">Mars</label>
+                </div>
+                <div class="form-check my-2 text-white-50">
+                    <input type="radio" name="q39" value="B">
+                    <label for="" class="form-check-label">Mercury</label>
+                </div>
+                <div class="form-check my-2 text-white-50">
+                    <input type="radio" name="q39" value="C">
+                    <label for="" class="form-check-label">Uranus</label>
+                </div>
+            </div>
+
+            <!--Q40-->
+            <div class="my-5">
+                <p class="lead font-weight-normal">40. Which of the following phenomena cannot be observed on the surface of the Moon?</p>
+                <div class="form-check my-2 text-white-50">
+                    <input type="radio" name="q40" value="A" checked>
+                    <label for="" class="form-check-label">Twinkling of stars</label>
+                </div>
+                <div class="form-check my-2 text-white-50">
+                    <input type="radio" name="q40" value="B">
+                    <label for="" class="form-check-label">Solar eclipse</label>
+                </div>
+                <div class="form-check my-2 text-white-50">
+                    <input type="radio" name="q40" value="C">
+                    <label for="" class="form-check-label">Rising and setting of the Sun</label>
+                </div>
+            </div>
+
+            <!--Q41-->
+            <div class="my-5">
+                <p class="lead font-weight-normal">41. Which planet has the fastest revolution time?</p>
+                <div class="form-check my-2 text-white-50">
+                    <input type="radio" name="q41" value="A" checked>
+                    <label for="" class="form-check-label">Neptune</label>
+                </div>
+                <div class="form-check my-2 text-white-50">
+                    <input type="radio" name="q41" value="B">
+                    <label for="" class="form-check-label">Venus</label>
+                </div>
+                <div class="form-check my-2 text-white-50">
+                    <input type="radio" name="q41" value="C">
+                    <label for="" class="form-check-label">Mercury</label>
+                </div>
+            </div>
+
+            <!--Q42-->
+            <div class="my-5">
+                <p class="lead font-weight-normal">42. NASA's Deep Impact space mission was employed to take detailed pictures of which comet nucleus?</p>
+                <div class="form-check my-2 text-white-50">
+                    <input type="radio" name="q42" value="A" checked>
+                    <label for="" class="form-check-label">Hyakutake</label>
+                </div>
+                <div class="form-check my-2 text-white-50">
+                    <input type="radio" name="q42" value="B">
+                    <label for="" class="form-check-label">Tempel 1</label>
+                </div>
+                <div class="form-check my-2 text-white-50">
+                    <input type="radio" name="q42" value="C">
+                    <label for="" class="form-check-label">Halley's Comet</label>
+                </div>
+            </div>
+
+            <!--Q43-->
+            <div class="my-5">
+                <p class="lead font-weight-normal">43. Storms of gases are visible in the atmospheres of the Sun during a?</p>
+                <div class="form-check my-2 text-white-50">
+                    <input type="radio" name="q43" value="A" checked>
+                    <label for="" class="form-check-label">Anticyclones</label>
+                </div>
+                <div class="form-check my-2 text-white-50">
+                    <input type="radio" name="q43" value="B">
+                    <label for="" class="form-check-label">Solar eclipse</label>
+                </div>
+                <div class="form-check my-2 text-white-50">
+                    <input type="radio" name="q43" value="C">
+                    <label for="" class="form-check-label">Cyclones</label>
+                </div>
+            </div>
+
+            <!--Q44-->
+            <div class="my-5">
+                <p class="lead font-weight-normal">44. The asteroid belt is located between which two planets in the solar system?</p>
+                <div class="form-check my-2 text-white-50">
+                    <input type="radio" name="q44" value="A" checked>
+                    <label for="" class="form-check-label">Saturn and Uranus</label>
+                </div>
+                <div class="form-check my-2 text-white-50">
+                    <input type="radio" name="q44" value="B">
+                    <label for="" class="form-check-label">Jupiter and Saturn</label>
+                </div>
+                <div class="form-check my-2 text-white-50">
+                    <input type="radio" name="q44" value="C">
+                    <label for="" class="form-check-label">Mars and Jupiter</label>
+                </div>
+            </div>
+
+            <!--Q45-->
+            <div class="my-5">
+                <p class="lead font-weight-normal">45. The planet that lies at the outermost orbit of the solar system is?</p>
+                <div class="form-check my-2 text-white-50">
+                    <input type="radio" name="q45" value="A" checked>
+                    <label for="" class="form-check-label">Neptune</label>
+                </div>
+                <div class="form-check my-2 text-white-50">
+                    <input type="radio" name="q45" value="B">
+                    <label for="" class="form-check-label">Mercury</label>
+                </div>
+                <div class="form-check my-2 text-white-50">
+                    <input type="radio" name="q45" value="C">
+                    <label for="" class="form-check-label">Uranus</label>
+                </div>
+            </div>
+
+            <!--Q46-->
+            <div class="my-5">
+                <p class="lead font-weight-normal">46. A star of which color can be said to be the coolest?</p>
+                <div class="form-check my-2 text-white-50">
+                    <input type="radio" name="q46" value="A" checked>
+                    <label for="" class="form-check-label">Blue</label>
+                </div>
+                <div class="form-check my-2 text-white-50">
+                    <input type="radio" name="q46" value="B">
+                    <label for="" class="form-check-label">Yellow</label>
+                </div>
+                <div class="form-check my-2 text-white-50">
+                    <input type="radio" name="q46" value="C">
+                    <label for="" class="form-check-label">Red</label>
+                </div>
+            </div>
+
+            <!--Q47-->
+            <div class="my-5">
+                <p class="lead font-weight-normal">47. The planets on either side of the earth are?</p>
+                <div class="form-check my-2 text-white-50">
+                    <input type="radio" name="q47" value="A" checked>
+                    <label for="" class="form-check-label">Mercury and Venus</label>
+                </div>
+                <div class="form-check my-2 text-white-50">
+                    <input type="radio" name="q47" value="B">
+                    <label for="" class="form-check-label">Mars and Venus</label>
+                </div>
+                <div class="form-check my-2 text-white-50">
+                    <input type="radio" name="q47" value="C">
+                    <label for="" class="form-check-label">Venus and Saturn</label>
+                </div>
+            </div>
+
+            <!--Q48-->
+            <div class="my-5">
+                <p class="lead font-weight-normal">48. Which of the following is not a gas planet?</p>
+                <div class="form-check my-2 text-white-50">
+                    <input type="radio" name="q48" value="A" checked>
+                    <label for="" class="form-check-label">Venus</label>
+                </div>
+                <div class="form-check my-2 text-white-50">
+                    <input type="radio" name="q48" value="B">
+                    <label for="" class="form-check-label">Uranus</label>
+                </div>
+                <div class="form-check my-2 text-white-50">
+                    <input type="radio" name="q48" value="C">
+                    <label for="" class="form-check-label">Neptune</label>
+                </div>
+            </div>
+
+            <!--Q49-->
+            <div class="my-5">
+                <p class="lead font-weight-normal">49. What was the name of Yuri Gagarin's space capsule?</p>
+                <div class="form-check my-2 text-white-50">
+                    <input type="radio" name="q49" value="A" checked>
+                    <label for="" class="form-check-label">Spaceminner 2</label>
+                </div>
+                <div class="form-check my-2 text-white-50">
+                    <input type="radio" name="q49" value="B">
+                    <label for="" class="form-check-label">Vostock 1</label>
+                </div>
+                <div class="form-check my-2 text-white-50">
+                    <input type="radio" name="q49" value="C">
+                    <label for="" class="form-check-label">Orbiterian 5</label>
+                </div>
+            </div>
+
+            <!--Q50-->
+            <div class="my-5">
+                <p class="lead font-weight-normal">50. Which is the largest asteroid in the solar system?</p>
+                <div class="form-check my-2 text-white-50">
+                    <input type="radio" name="q50" value="A" checked>
+                    <label for="" class="form-check-label">Itokawae</label>
+                </div>
+                <div class="form-check my-2 text-white-50">
+                    <input type="radio" name="q50" value="B">
+                    <label for="" class="form-check-label">Ceres</label>
+                </div>
+                <div class="form-check my-2 text-white-50">
+                    <input type="radio" name="q50" value="C">
+                    <label for="" class="form-check-label">Pallas</label>
+                </div>
+            </div>
+
+
+
+
+            <!--submit button-->
+            <div class="text-right">
+                <input type="submit" class="btn btn-light text-success">
+              
+            </div>
+          
+          
+        </form>
+        
+        
+    </div>
+  </div>
+
+ 
+    <script src="app.js"></script>
+</body>
+</html>
