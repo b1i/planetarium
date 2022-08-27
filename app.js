@@ -42,16 +42,3 @@ form.addEventListener('submit', e =>{
     },35);
     
 });
-
-
-
-
-
-// let i = 0;
-// const timer = setInterval(() =>{
-// i++;
-// console.log('hey');
-// if(i === 5){
-//     clearInterval(timer);
-// }
-// }, 1000);
