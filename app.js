@@ -17,12 +17,10 @@ form.addEventListener('submit', e =>{
 
     // show result on page
     window.scrollTo(0,0);
-    // result.querySelector('span').textContent = `${score}%`;
     result.classList.remove('d-none');
 
     let output = 0;
     const timer = setInterval(() => {
-        // result.querySelector('span').textContent = `${output}%`;
         if(score<50){
             result.querySelector('p').textContent = `Sorry... you are ${output}% right, better luck next time`;
         }else{
@@ -33,10 +31,7 @@ form.addEventListener('submit', e =>{
            
             
         }else {
-            output++;
-           
-    
-            
+            output++; 
         }
      
     },35);
